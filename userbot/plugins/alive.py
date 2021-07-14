@@ -38,7 +38,7 @@ async def amireallyalive(event):
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "✧✧"
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "✮ MY BOT IS RUNNING SUCCESSFULLY ✮"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "《CYRIL》 USERBOT Modified by [サイモン](tg://openmessage?user_id=1860979515) 
     CAT_IMG = gvarstatus("ALIVE_PIC")
     if CAT_IMG:
         CAT = [x for x in CAT_IMG.split()]
@@ -47,7 +47,7 @@ async def amireallyalive(event):
         cat_caption += f"**{EMOJI} Master : {mention}**\n"
         cat_caption += f"**{EMOJI} Uptime :** `{uptime}\n`"
         cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
-        cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
+        cat_caption += f"**{EMOJI} Version :** `{catversion}`\n"
         cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
         cat_caption += f"**{EMOJI} Database :** `{check_sgnirts}`\n"
         try:
@@ -67,7 +67,7 @@ async def amireallyalive(event):
             f"**{EMOJI} Master : {mention}**\n"
             f"**{EMOJI} Uptime :** `{uptime}\n`"
             f"**{EMOJI} Telethon Version :** `{version.__version__}\n`"
-            f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
+            f"**{EMOJI} Userbot Version :** `{catversion}`\n"
             f"**{EMOJI} Python Version :** `{python_version()}\n`"
             f"**{EMOJI} Database :** `{check_sgnirts}`\n",
         )
